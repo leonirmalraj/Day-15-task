@@ -1,55 +1,55 @@
 // script.js
 
-const fetchData = (callback) => {
+setTimeout(() => {
+  document.getElementById('countdown-container').innerText = 10;
+
   setTimeout(() => {
-    console.log('Data fetched');
-    const data = { message: 'Hello' };
-    callback(data);
+    document.getElementById('countdown-container').innerText = 9;
+
+    setTimeout(() => {
+      document.getElementById('countdown-container').innerText = 8;
+
+      setTimeout(() => {
+        document.getElementById('countdown-container').innerText = 7;
+
+        setTimeout(() => {
+          document.getElementById('countdown-container').innerText = 6;
+
+          setTimeout(() => {
+            document.getElementById('countdown-container').innerText = 5;
+
+            setTimeout(() => {
+              document.getElementById('countdown-container').innerText = 4;
+
+              setTimeout(() => {
+                document.getElementById('countdown-container').innerText = 3;
+
+                setTimeout(() => {
+                  document.getElementById('countdown-container').innerText = 2;
+
+                  setTimeout(() => {
+                    document.getElementById('countdown-container').innerText = 1;
+
+                    setTimeout(() => {
+                      document.getElementById('countdown-container').innerText = 'Happy Independence Day';
+                    }, 1000);
+
+                  }, 1000);
+
+                }, 1000);
+
+              }, 1000);
+
+            }, 1000);
+
+          }, 1000);
+
+        }, 1000);
+
+      }, 1000);
+
+    }, 1000);
+
   }, 1000);
-};
 
-const processData = (data, callback) => {
-  setTimeout(() => {
-    console.log('Data processed:', data);
-    data.message += ' World';
-    callback(data);
-  }, 1000);
-};
-
-const displayResult = (data) => {
-  setTimeout(() => {
-    console.log('Final result:', data.message);
-    document.getElementById('output-container').innerText = data.message;
-  }, 1000);
-};
-
-const updateTimer = () => {
-  let seconds = 0;
-  return setInterval(() => {
-    seconds++;
-    document.getElementById('timer').innerText = seconds;
-  }, 1000);
-};
-
-const countdown = (num, callback) => {
-  setTimeout(() => {
-    document.getElementById('countdown-container').innerText = num;
-    if (num > 1) {
-      countdown(num - 1, callback);
-    } else {
-      callback();
-    }
-  }, 1000);
-};
-
-// Initiating the callback hell
-const timerInterval = updateTimer();
-
-countdown(10, () => {
-  fetchData((data) => {
-    processData(data, (processedData) => {
-      displayResult(processedData);
-      clearInterval(timerInterval); // Stop the timer when the process is complete
-    });
-  });
-});
+}, 1000);
