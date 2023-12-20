@@ -1,19 +1,16 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
 }
 
-#timer-container {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-#output-container {
-    font-size: 1.5em;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
+#countdown-container {
+  font-size: 2em;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
