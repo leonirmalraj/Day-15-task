@@ -1,0 +1,19 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#timer-container {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#output-container {
+    font-size: 1.5em;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
